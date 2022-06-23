@@ -12,37 +12,37 @@
    <!-- Hero image and logo area -->
    <div class="hero">
     <div>
-      <img class='logo' src="" alt="">
-      <h1 class="title-text">2022 Summer Sesh</h1>
+      <img src="img/gautier-salles-CPFV7QS3_Sg-unsplash.jpg" alt="" class="bg">
     </div>
+    <h1 class="title-text">2022 Summer Sesh</h1>
    </div>
 
    <!-- Description and credentials section -->
    <div class="sign-up-section">
     <!-- Description block -->
-    <div class="description">
-      <p>This is not a real skate contest!</p>
+    <div id="description">
+      <p>This is not a real skate contest (yet)!</p>
     </div>
     <!-- User info form's block -->
-    <div class="user-info">
+    <div id="user-info">
       <p>Let's do this!</p>
-      <!-- THE FORM ITESELF -->
-      <form id="sign-up-form" action="">
+      <!-- THE FORM ITSELF -->
+      <form id="input-area" action="">
        
         <div>
           <!-- First name -->
           <div>
-            <label for="first-name">First Name</label>
+            <label for="first-name">FIRST NAME</label>
             <input id="first-name" type="text">
           </div>
           <!-- Email -->
           <div>
-            <label for="email">Email</label>
+            <label for="email">EMAIL</label>
             <input type="email" id="email">
           </div>
           <!-- Password -->
           <div>
-            <label for="password">Password</label>
+            <label for="password">PASSWORD</label>
             <input type="password" id="password">
           </div>
         </div>
@@ -50,17 +50,17 @@
         <div>
           <!-- Last name -->
           <div>
-            <label for="last-name">Last Name</label>
-          <input type="text" id="last-name">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name">
           </div>
           <!-- Phone number -->
           <div>
-            <label for="phone-num">Phone Number</label>
+            <label for="phone-num">PHONE NUMBER</label>
             <input type="text" id="phone-num">
           </div>
           <!-- Password confirmation -->
           <div>
-            <label for="password-confirm">Confirm Password</label>
+            <label for="password-confirm">CONFIRM PASSWORD</label>
             <input type="password" id="password-confirm">
           </div>
         </div>
@@ -68,9 +68,11 @@
       </form>
     </div>
     <!-- Submit button block -->
-    <div class="submit-info">
-      <input form="sign-up-form" type="submit">
-      <p>Already have an account? <a href="">Login</a></p>
+    <div id="submit-info">
+      <div>
+        <input id="submit" form="sign-up-form" type="submit" value="Create Account">
+        <p>Already have an account? <a href="">Login</a></p>
+      </div>
     </div>
    </div>
 </body>

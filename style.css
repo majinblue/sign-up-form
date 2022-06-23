@@ -1,3 +1,7 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -8,41 +12,97 @@ body > div {
 }
 
 .hero {
+  display: flex;
   width: 40vw;
-  background-image: url(img/gautier-salles-CPFV7QS3_Sg-unsplash.jpg) ;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-.user-info input {
-  width: 200px;
+.bg {
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40vw;
+  height: 100vh;
 }
 
 .sign-up-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   width: 60vw;
-  padding-left: 3rem;
 }
 
-#sign-up-form {
+#description {
+  padding-left: 1rem;
+  height: 30vh;
+  background-image: linear-gradient(to bottom right, #638aab, #ecd9c6);
+  display: flex;
+}
+
+#description p {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  
+}
+
+#user-info {
+  height: 35vh;
+  padding-left: 1rem;
+
+}
+
+#user-info input {
+  width: 200px;
+  border: 1px rgb(209, 209, 209) solid;
+  border-radius: .5rem;
+  padding: 3px;
+}
+
+#user-info input:focus {
+  outline: none;
+  border: 1px rgb(102, 196, 255) solid;
+  box-shadow: 2px 2px rgb(210, 210, 210);
+}
+
+#input-area {
   display: flex;
   justify-content: flex-start;
   column-gap: 3rem;
 }
 
-#sign-up-form > div {
+#input-area > div {
   display: flex;
   flex-direction: column;
   row-gap: .5rem;
 }
 
-#sign-up-form > div > div {
+#input-area > div > div {
   display: flex;
   flex-direction: column;
   row-gap: .3rem;
+}
+
+#input-area label {
+  font-size: .7rem;
+}
+
+#submit-info {
+  height: 35vh;
+  padding-left: 1rem;
+  background-image: linear-gradient(to bottom left, #638aab, #ecd9c6);
+}
+
+#submit-info div {
+  padding-top: 3rem;
+}
+
+#submit {
+  border: none;
+  border-radius: .5rem;
+  background-color: #bfc5c3;
+  color: white;
+  padding: 1rem;
 }
